@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Vibes</title>
+    <style>
+        /* Animated gradient background */
+        body {
+            background: linear-gradient(-45deg, #0d0d0d, #001f3f, #003366, #0d0d0d);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: cyan;
+            text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px cyan, 0 0 20px cyan; }
+            to { text-shadow: 0 0 20px blue, 0 0 30px blue; }
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid cyan;
+            padding: 10px 20px;
+            color: cyan;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: cyan;
+            color: #0d0d0d;
+            box-shadow: 0 0 20px cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Future 🚀</h1>
+    <button onclick="alert('You clicked the future!')">Click Me</button>
+</body>
+</html>
